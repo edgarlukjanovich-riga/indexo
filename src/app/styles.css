@@ -4,6 +4,24 @@
   max-width: 420px;
 }
 
+.login-bg {
+  background: url('/riga_aerial.jpg') center center / cover no-repeat fixed;
+}
+
+.login-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: inherit;
+  filter: blur(4px);
+  z-index: 0;
+}
+
+.login-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* Dashboard */
 .post-card {
   cursor: pointer;
@@ -25,7 +43,8 @@
 
 /* Drawer */
 .drawer-backdrop {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   z-index: 999;
 }
 
