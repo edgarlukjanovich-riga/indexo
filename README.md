@@ -46,14 +46,14 @@ The session is stored in `localStorage` and persists across page reloads.
 
 ## Scripts
 
-| Script | Description |
-|---|---|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm start` | Start production server |
-| `npm run lint` | Run ESLint |
+| Script           | Description               |
+| ---------------- | ------------------------- |
+| `npm run dev`    | Start development server  |
+| `npm run build`  | Build for production      |
+| `npm start`      | Start production server   |
+| `npm run lint`   | Run ESLint                |
 | `npm run format` | Run Prettier on all files |
-| `npm test` | Run Jest unit tests |
+| `npm test`       | Run Jest unit tests       |
 
 ## Project Structure
 
@@ -109,32 +109,32 @@ src/
 
 ## Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| Next.js 14 | React framework with App Router |
-| React 18 | UI library |
-| TypeScript | Type safety |
-| Bootstrap 5 | Responsive UI components |
-| Redux Toolkit | State management |
-| RTK Query | Data fetching and caching |
-| Jest | Unit testing |
-| React Testing Library | Component testing |
-| ESLint | Linting |
-| Prettier | Code formatting |
+| Technology            | Purpose                         |
+| --------------------- | ------------------------------- |
+| Next.js 14            | React framework with App Router |
+| React 18              | UI library                      |
+| TypeScript            | Type safety                     |
+| Bootstrap 5           | Responsive UI components        |
+| Redux Toolkit         | State management                |
+| RTK Query             | Data fetching and caching       |
+| Jest                  | Unit testing                    |
+| React Testing Library | Component testing               |
+| ESLint                | Linting                         |
+| Prettier              | Code formatting                 |
 
 ## Tests
 
 69 tests across 10 suites:
 
-| File | Coverage |
-|---|---|
-| `auth.test.ts` | `login`, `logout`, `isAuthenticated` with localStorage |
-| `const.test.ts` | `PERSONAL_CODE_REGEX` format validation, `MESSAGES` completeness |
-| `utils.test.ts` | `ensureDot`, `stripNonDigits`, `formatPersonalCode` |
-| `store.test.ts` | Store structure, `postsApi` endpoints and `reducerPath` |
-| `useAuthGuard.test.ts` | Redirect when unauthenticated, no redirect when authenticated |
-| `components.common.test.tsx` | `EmptyState`, `ErrorAlert`, `Spinner` snapshots + rendering |
+| File                             | Coverage                                                             |
+| -------------------------------- | -------------------------------------------------------------------- |
+| `auth.test.ts`                   | `login`, `logout`, `isAuthenticated` with localStorage               |
+| `const.test.ts`                  | `PERSONAL_CODE_REGEX` format validation, `MESSAGES` completeness     |
+| `utils.test.ts`                  | `ensureDot`, `stripNonDigits`, `formatPersonalCode`                  |
+| `store.test.ts`                  | Store structure, `postsApi` endpoints and `reducerPath`              |
+| `useAuthGuard.test.ts`           | Redirect when unauthenticated, no redirect when authenticated        |
+| `components.common.test.tsx`     | `EmptyState`, `ErrorAlert`, `Spinner` snapshots + rendering          |
 | `components.pagination.test.tsx` | Pagination snapshot, prev/next visibility, page change, active state |
-| `components.nav.login.test.tsx` | `NavHeader` and `LoginCard` snapshots, interactions, error display |
-| `components.postcard.test.tsx` | `PostCard` snapshot, click handler, ellipsis vs dot logic |
-| `components.drawer.test.tsx` | `Drawer` snapshots, backdrop visibility, close interactions |
+| `components.nav.login.test.tsx`  | `NavHeader` and `LoginCard` snapshots, interactions, error display   |
+| `components.postcard.test.tsx`   | `PostCard` snapshot, click handler, ellipsis vs dot logic            |
+| `components.drawer.test.tsx`     | `Drawer` snapshots, backdrop visibility, close interactions          |

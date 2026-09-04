@@ -1,4 +1,7 @@
-import { useRouter, useSearchParams } from 'next/navigation';
+'use client';
+
+import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { PAGE_SIZE, MESSAGES } from '@/lib/const';
 import { useGetPostsQuery } from '@/store/api/postsApi';
 import PostCard from '@/components/dashboard/PostCard';
@@ -12,9 +15,8 @@ interface PostListProps {
 }
 
 export default function PostList({ onPostSelect }: PostListProps) {
-  const router = useRouter();
   const searchParams = useSearchParams();
-  const page = Number(searchParams.get('page') ?? 1);
+  const [page, setPage] = useState(Number(searchParams.get('page') ?? 1));
 
   const { data: posts = [], isLoading, isError } = useGetPostsQuery();
 
@@ -22,7 +24,8 @@ export default function PostList({ onPostSelect }: PostListProps) {
   const paginated = posts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   function handlePageChange(newPage: number) {
-    router.push(`?page=${newPage}`);
+    setPage(newPage);
+    window.history.pushState(null, '', `?page=${newPage}`);
   }
 
   if (isLoading) return <Spinner />;
