@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Pagination matches snapshot on middle page 1`] = `
+<div>
+  <nav
+    aria-label="Posts pagination"
+    class="mt-5 d-flex justify-content-center"
+  >
+    <ul
+      class="pagination"
+    >
+      <li
+        class="page-item "
+      >
+        <button
+          class="page-link"
+          title="Iepriekšēja lapa"
+        >
+          &lt;&lt;
+        </button>
+      </li>
+      <li
+        class="page-item "
+      >
+        <button
+          class="page-link"
+          title="1. lapa"
+        >
+          1
+        </button>
+      </li>
+      <li
+        class="page-item "
+      >
+        <button
+          class="page-link"
+          title="2. lapa"
+        >
+          2
+        </button>
+      </li>
+      <li
+        class="page-item active"
+      >
+        <button
+          class="page-link"
+          title="3. lapa"
+        >
+          3
+        </button>
+      </li>
+      <li
+        class="page-item "
+      >
+        <button
+          class="page-link"
+          title="4. lapa"
+        >
+          4
+        </button>
+      </li>
+      <li
+        class="page-item "
+      >
+        <button
+          class="page-link"
+          title="5. lapa"
+        >
+          5
+        </button>
+      </li>
+      <li
+        class="page-item "
+      >
+        <button
+          class="page-link"
+          title="Nākamā lapa"
+        >
+          &gt;&gt;
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

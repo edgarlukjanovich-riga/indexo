@@ -15,7 +15,7 @@ export default function LoginCard({ code, error, onCodeChange, onSubmit }: Login
     <div className="card shadow-sm login-card">
       <div className="card-body p-4">
         <h4 className="card-title mb-4 text-center">{APP_TITLE}</h4>
-        <form onSubmit={onSubmit} noValidate>
+        <form onSubmit={onSubmit} noValidate aria-label="login">
           <div className="mb-3">
             <label htmlFor="code" className="form-label">
               Personas kods

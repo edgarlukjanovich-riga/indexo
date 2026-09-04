@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`EmptyState matches snapshot 1`] = `
+<div>
+  <p
+    class="text-muted text-center py-5"
+  >
+    No data.
+  </p>
+</div>
+`;
+
+exports[`ErrorAlert matches snapshot 1`] = `
+<div>
+  <div
+    class="alert alert-danger"
+  >
+    Something went wrong.
+  </div>
+</div>
+`;
+
+exports[`Spinner matches snapshot 1`] = `
+<div>
+  <div
+    class="d-flex justify-content-center py-5"
+  >
+    <div
+      class="spinner-border text-primary"
+      role="status"
+    >
+      <span
+        class="visually-hidden"
+      >
+        Loading…
+      </span>
+    </div>
+  </div>
+</div>
+`;

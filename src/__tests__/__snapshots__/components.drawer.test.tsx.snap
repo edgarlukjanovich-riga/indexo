@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Drawer matches snapshot when hidden 1`] = `
+<div>
+  <div
+    class="position-fixed top-0 end-0 h-100 bg-white shadow-lg d-flex flex-column drawer drawer-hidden"
+  >
+    <div
+      class="d-flex align-items-center justify-content-between p-3 border-bottom"
+    >
+      <h5
+        class="mb-0"
+      >
+        Test Drawer
+      </h5>
+      <button
+        aria-label="Aizvert"
+        class="btn-close"
+        title="Aizvert"
+      />
+    </div>
+    <div
+      class="p-4 overflow-auto flex-grow-1"
+    >
+      <p>
+        Content
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Drawer matches snapshot when visible 1`] = `
+<div>
+  <div
+    class="position-fixed top-0 start-0 w-100 h-100 drawer-backdrop"
+  />
+  <div
+    class="position-fixed top-0 end-0 h-100 bg-white shadow-lg d-flex flex-column drawer drawer-visible"
+  >
+    <div
+      class="d-flex align-items-center justify-content-between p-3 border-bottom"
+    >
+      <h5
+        class="mb-0"
+      >
+        Test Drawer
+      </h5>
+      <button
+        aria-label="Aizvert"
+        class="btn-close"
+        title="Aizvert"
+      />
+    </div>
+    <div
+      class="p-4 overflow-auto flex-grow-1"
+    >
+      <p>
+        Content
+      </p>
+    </div>
+  </div>
+</div>
+`;

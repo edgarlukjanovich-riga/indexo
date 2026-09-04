@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`LoginCard matches snapshot 1`] = `
+<div>
+  <div
+    class="card shadow-sm login-card"
+  >
+    <div
+      class="card-body p-4"
+    >
+      <h4
+        class="card-title mb-4 text-center"
+      >
+        INDEXO Test Portal
+      </h4>
+      <form
+        aria-label="login"
+        novalidate=""
+      >
+        <div
+          class="mb-3"
+        >
+          <label
+            class="form-label"
+            for="code"
+          >
+            Personas kods
+          </label>
+          <input
+            autocomplete="off"
+            class="form-control "
+            id="code"
+            placeholder="XXXXXX-XXXXX"
+            type="text"
+            value=""
+          />
+        </div>
+        <button
+          class="btn btn-primary btn-lg w-100"
+          title="Pieslēgties"
+          type="submit"
+        >
+          Pieslēgties
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LoginCard matches snapshot with error 1`] = `
+<div>
+  <div
+    class="card shadow-sm login-card"
+  >
+    <div
+      class="card-body p-4"
+    >
+      <h4
+        class="card-title mb-4 text-center"
+      >
+        INDEXO Test Portal
+      </h4>
+      <form
+        aria-label="login"
+        novalidate=""
+      >
+        <div
+          class="mb-3"
+        >
+          <label
+            class="form-label"
+            for="code"
+          >
+            Personas kods
+          </label>
+          <input
+            autocomplete="off"
+            class="form-control is-invalid"
+            id="code"
+            placeholder="XXXXXX-XXXXX"
+            type="text"
+            value=""
+          />
+          <div
+            class="invalid-feedback"
+          >
+            Invalid code.
+          </div>
+        </div>
+        <button
+          class="btn btn-primary btn-lg w-100"
+          title="Pieslēgties"
+          type="submit"
+        >
+          Pieslēgties
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavHeader matches snapshot 1`] = `
+<div>
+  <nav
+    class="navbar navbar-dark bg-primary px-3"
+  >
+    <span
+      class="navbar-brand fw-semibold"
+    >
+      INDEXO Test Portal
+    </span>
+    <button
+      class="btn btn-outline-light btn px-4"
+      title="Iziet"
+    >
+      Iziet
+    </button>
+  </nav>
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PostCard matches snapshot 1`] = `
+<div>
+  <div
+    class="card h-100 shadow-sm post-card"
+  >
+    <div
+      class="card-body"
+    >
+      <span
+        class="badge bg-secondary mb-2"
+      >
+        #
+        1
+      </span>
+      <h5
+        class="card-title first-upper"
+      >
+        test title
+      </h5>
+      <p
+        class="card-text text-muted small first-upper"
+      >
+        test body content.
+      </p>
+    </div>
+  </div>
+</div>
+`;
