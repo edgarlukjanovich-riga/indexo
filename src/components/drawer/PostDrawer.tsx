@@ -8,7 +8,7 @@ interface PostDrawerProps {
 
 export default function PostDrawer({ postId, onClose }: PostDrawerProps) {
   return (
-    <Drawer title="Post Details" visible={postId !== null} onClose={onClose}>
+    <Drawer title="Ieraksta saturs" visible={postId !== null} onClose={onClose}>
       {postId !== null && <PostDetail postId={postId} />}
     </Drawer>
   );

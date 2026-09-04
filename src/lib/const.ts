@@ -4,6 +4,7 @@ export const SESSION_KEY = 'auth_session';
 
 export const VALID_PERSONAL_CODE = '231090-14115';
 export const PERSONAL_CODE_REGEX = /^\d{6}-\d{5}$/;
+export const PERSONAL_CODE_PLACEHOLDER = 'XXXXXX-XXXXX';
 
 export const PAGE_SIZE = 12;
 export const POST_BODY_PREVIEW_LENGTH = 80;

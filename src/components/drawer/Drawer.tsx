@@ -21,7 +21,7 @@ export default function Drawer({ title, visible, onClose, children }: DrawerProp
       >
         <div className="d-flex align-items-center justify-content-between p-3 border-bottom">
           <h5 className="mb-0">{title}</h5>
-          <button className="btn-close" onClick={onClose} aria-label="Close" />
+          <button className="btn-close" onClick={onClose} aria-label="Aizvert" title="Aizvert" />
         </div>
         <div className="p-4 overflow-auto flex-grow-1">{children}</div>
       </div>

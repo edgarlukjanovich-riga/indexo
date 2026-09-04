@@ -24,7 +24,7 @@ export default function DashboardPage() {
     <div className="min-vh-100 bg-light">
       <NavHeader onLogout={handleLogout} />
       <div className="container py-4">
-        <h1 className="mb-4">Posts</h1>
+        <h1 className="mb-4">Ieraksti</h1>
         <Suspense fallback={<Spinner />}>
           <PostList onPostSelect={setSelectedId} />
         </Suspense>
