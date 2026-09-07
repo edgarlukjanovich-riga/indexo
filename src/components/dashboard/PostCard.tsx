@@ -9,7 +9,7 @@ interface PostCardProps {
 
 export default function PostCard({ post, onClick }: PostCardProps) {
   return (
-    <div className="card h-100 shadow-sm post-card" onClick={onClick}>
+    <div className="card h-100 shadow-sm post-card" onClick={onClick} title="Rādīt saturu">
       <div className="card-body">
         <span className="badge bg-secondary mb-2">#{post.id}</span>
         <h5 className="card-title first-upper">{post.title}</h5>

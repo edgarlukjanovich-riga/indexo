@@ -28,7 +28,11 @@ export default function Pagination({ page, totalPages, onPageChange }: Paginatio
     <nav className="mt-5 d-flex justify-content-center" aria-label="Posts pagination">
       <ul className="pagination">
         {page > 1 && (
-          <PageButton label="<<" title="Iepriekšēja lapa" onClick={() => onPageChange(page - 1)} />
+          <PageButton
+            label="&laquo;"
+            title="Iepriekšēja lapa"
+            onClick={() => onPageChange(page - 1)}
+          />
         )}
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
           <PageButton
@@ -40,7 +44,7 @@ export default function Pagination({ page, totalPages, onPageChange }: Paginatio
           />
         ))}
         {page < totalPages && (
-          <PageButton label=">>" title="Nākamā lapa" onClick={() => onPageChange(page + 1)} />
+          <PageButton label="&raquo;" title="Nākamā lapa" onClick={() => onPageChange(page + 1)} />
         )}
       </ul>
     </nav>
